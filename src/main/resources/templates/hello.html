@@ -6,8 +6,10 @@
 </head>
 <body>
   <h1>Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
+
   <form th:action="@{/logout}" method="post">
       <input type="submit" value="Sing Out" />
   </form>
+
 </body>
 </html>
